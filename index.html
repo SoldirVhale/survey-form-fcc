@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet"/>
+
+        <!--FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Lugrasimo&display=swap" rel="stylesheet">
+          
+        <title>Thrones of Eldoria - Survey Form</title>
+    </head>
+    <!--BODY-->
+    <body>
+        <header>
+            <h1 id="title">Thrones of Eldoria</h1>
+            <p id="description">Thank you for taking part to this survey!</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group general">
+                <label id="name-label">Name</label>
+                <input placeholder="Enter Full Name" id="name" type="text" required><br>
+
+                <label id="email-label">Email</label>
+                <input placeholder="E-mail" type="email" id="email" required><br>
+
+                <label id="number-label">Age</label>
+                <input placeholder="Your Age" min="18" max="99" type="number" id="number"> 
+            </div>
+            <div class="form-group hours-spent">
+                <p>How many hours have you spent playing Thrones of Eldoria?</p>
+                <select id="dropdown">
+                    <option selected>-- Choose an option --</option>
+                    <option>Less than 5 hours</option>
+                    <option>5-20 hours</option>
+                    <option>20-50 hours</option>
+                    <option>More than 50 hours</option>
+                </select>
+            </div>
+            <div class="form-group title-rate">
+              <p>Would you recommend this game?</p>
+            </div> 
+            <div class="form-group rate">
+                <div>
+                  <input id="no" type="radio" name="rating" value="no" ><br>
+                  <label for="no">No</label> 
+                </div>
+                <div>
+                  <input id="probably" type="radio" name="rating" value="probably" checked><br>
+                  <label for="probably">Probably</label>
+                </div>
+                <div>
+                  <input id="yes" type="radio" name="rating" value="yes"><br>
+                  <label for="yes">Yes</label>
+                </div>
+            </div>
+            <div class="form-group improvements">
+                <p>Which feature of 'Thrones of Eldoria' do you think needs improvement?</p>
+
+                <label><input type="checkbox" value="1"> Graphics</label>
+                  
+ 
+                <label><input type="checkbox" value="2"> Storyline</label>
+                  
+
+                <label><input type="checkbox" value="3"> Combat Mechanics</label>
+                
+
+                <label><input type="checkbox" value="4"> Character Development</label>
+                
+
+                <label><input type="checkbox" value="5"> Quest Design</label>
+                 
+
+                <label><input type="checkbox" value="6"> User Interface</label>
+                
+            </div>
+            <div class="form-group textfield">
+                <p>Which character <em>class</em> did you choose, and why?</p>
+                <textarea rows="5" cols="30"></textarea>
+            </div>
+            <div class="form-group button-sub">
+                <button id="submit" type="submit">Submit</button> 
+            </div>
+      </form>
+      <footer>
+        <p>Thrones of Eldoria ©️ Vhale</p>
+      </footer>
+    </body>
+  </html>
