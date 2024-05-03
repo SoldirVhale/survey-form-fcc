@@ -11,8 +11,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Lugrasimo&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3d81f58312.js" crossorigin="anonymous"></script>
 
-       
         <title>Thrones of Eldoria - Survey Form</title>
     </head>
     <!--BODY-->
@@ -23,18 +23,18 @@
         </header>
         <form id="survey-form">
             <div class="general">
-                <label id="name-label">Name</label>
+                <label id="name-label"><span class="deco">Name</span></label>
                 <input placeholder="Enter Full Name" id="name" type="text" required><br>
 
-                <label id="email-label">Email</label>
+                <label id="email-label"><span class="deco">Email</span></label>
                 <input placeholder="E-mail" type="email" id="email" required><br>
 
-                <label id="number-label">Age</label>
-                <input placeholder="Your Age" min="18" max="99" type="number" id="number"> 
+                <label id="number-label"><span class="deco">Age</span></label>
+                <input placeholder="Your Age" min="18" max="99" type="number" id="number" required> 
             </div>
             <div class="hours-spent">
-                <p>How many hours have you spent playing <em>Thrones of Eldoria</em>?</p>
-                <select id="dropdown">
+                <p>How many <span class="deco">hours</span> have you spent playing <em>Thrones of Eldoria</em>?</p>
+                <select id="dropdown" required>
                     <option value="" selected>-- Choose an option --</option>
                     <option value="less5h">Less than 5 hours</option>
                     <option value="5-20h">5-20 hours</option>
@@ -43,12 +43,12 @@
                 </select>
             </div>
             <div class="title-rate">
-              <p>Would you recommend this game?</p>
+              <p>Would you <span class="deco">recommend</span> this game?</p>
             </div> 
             <div class="rate">
                 <div>
                   <input id="no" type="radio" name="rating" value="no" ><br>
-                  <label for="no">No</label> 
+                  <label for="no"><i class="fa-regular fa-thumbs-down"></i> No</label> 
                 </div>
                 <div>
                   <input id="probably" type="radio" name="rating" value="probably" checked><br>
@@ -56,12 +56,12 @@
                 </div>
                 <div>
                   <input id="yes" type="radio" name="rating" value="yes"><br>
-                  <label for="yes">Yes</label>
+                  <label for="yes">Yes <i class="fa-regular fa-thumbs-up"></i></label>
                 </div>
             </div>
             <div class="game-genre">
-              <p>Preferred Game Genre</p>
-              <select id="gameGenre" name="gameGenre">
+              <p><span class="deco">Preferred</span> Game Genre</p>
+              <select id="gameGenre" name="gameGenre" required>
                 <option value="">--Select your preferred game genre--</option>
                 <option value="action">Action</option>
                 <option value="adventure">Adventure</option>
@@ -74,7 +74,7 @@
               </select>
           </div>
             <div class="improvements">
-                <p>Which feature of <em>Thrones of Eldoria</em> do you think needs improvement?</p>
+                <p>Which feature of <em>Thrones of Eldoria</em> do you think needs <span class="deco">improvement</span>?</p>
 
                 <label><input type="checkbox" value="1"> Graphics</label>
                   
@@ -95,8 +95,8 @@
                 
             </div>
             <div class="textfield">
-                <p>Which character <em>class</em> did you choose, and why?</p>
-                <textarea rows="5" cols="30"></textarea>
+                <p>Which <span class="deco">character class</span> did you choose, and why?</p>
+                <textarea rows="5" cols="30" placeholder="In Eldoria you will find a hidden cave..."></textarea>
             </div>
             <div class="button-sub">
                 <button id="submit" type="submit">Submit</button> 

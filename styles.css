@@ -34,6 +34,31 @@ body {
     font-size: 20px;
 }
 
+.deco {
+    color: gold;
+    text-shadow: -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  1px  1px 0 #000;
+}
+
+em {
+    color: gold;
+    text-shadow: -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  1px  1px 0 #000;
+}
+
+.fa-regular.fa-thumbs-down {
+    transform: rotateY(180deg);
+    color: crimson;
+}
+
+.fa-regular.fa-thumbs-up {
+    color: forestgreen;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -55,6 +80,11 @@ h1 {
     padding: 20px 0 20px 0;
     color: gold;
     font-family: "Lugrasimo", cursive;
+    user-select: none;
+    text-shadow: -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px 1px 0 #000,
+                  1px 1px 0 #000;
 }
 
 #description {
@@ -62,6 +92,11 @@ h1 {
     color: lightgrey;
     padding-bottom: 20px;
     font-family: "Lugrasimo", cursive;
+    user-select: none;
+    text-shadow: -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px 1px 0 #000,
+                  1px 1px 0 #000;
 }
 
 /*GENERAL*/
@@ -78,7 +113,7 @@ h1 {
 }
 
 .general {
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
     display: flex;
     flex-direction: column;
     align-self: stretch;
@@ -90,7 +125,8 @@ h1 {
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    padding: 0px 20px 20px 20px;
+    padding: 0 20px 40px 20px;
+    line-height: 1.3;
 }
 
 /*RATING*/
@@ -98,7 +134,7 @@ h1 {
 .title-rate {
     display: flex;
     align-self: stretch;
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 10px 20px;
 }
 
 .rate {
@@ -108,7 +144,19 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 100px;
-    padding: 5px 20px 20px 20px;
+    padding: 0px 20px 40px 20px;
+}
+
+#no {
+    accent-color: crimson;
+}
+
+#probably {
+    accent-color: orange;
+}
+
+#yes {
+    accent-color: forestgreen;
 }
 
 /*GAME GENRE*/
@@ -117,7 +165,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 40px 20px;
 }
 
 /*IMPROVEMENTS*/
@@ -126,11 +174,16 @@ h1 {
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 40px 20px;
+    line-height: 1.3;
 }
 
 .improvements > label:last-of-type {
     padding-bottom: 0;
+}
+
+input[type="checkbox"] {
+    accent-color: crimson;
 }
 
 /*TEXT-FIELD*/
@@ -139,7 +192,13 @@ h1 {
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 40px 20px;
+}
+
+textarea {
+    font-family: "MedievalSharp", cursive;
+    padding: 6px;
+    font-size: 18px;
 }
 
 /*BUTTON-SUB*/
